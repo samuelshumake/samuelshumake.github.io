@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.page-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    @include breakpoint($laptop) {
+        max-width: 900px;
+    }
+    @include breakpoint($tablet) {
+        max-width: 768px;
+    }
+    @include breakpoint($mobile) {
+        max-width: 90vw;
+    }
+}
+
+.section {
+    height: 100vh;
+    &.home {
+        height: calc(100vh - 75px);
+    }
+}
+
+img {
+    max-width: 100%;
+}
