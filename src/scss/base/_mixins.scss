@@ -31,5 +31,14 @@
             }
         }
     }
-    
+}
+
+@mixin circle-image {
+    border-radius: 100%;
+    transition: all .3s ease;
+    @media (hover: hover) {
+        &:hover {
+            border-radius: 100% 0 100% 100%;
+        }
+    }
 }

@@ -8,15 +8,11 @@
         align-items: center;
         height: 100%;
         .home__image-container {
-            width: 500px;
-            height: 500px;
-            margin: 0 auto;
-            border-radius: 100%;
-            overflow: hidden;
             img {
-                width: 100%;
-                height: 100%;
+                width: 500px;
+                height: 500px;
                 object-fit: cover;
+                @include circle-image;
             }
         }
         .home__content {
