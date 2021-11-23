@@ -6,6 +6,26 @@ body {
     font-family: "Rubik";
 }
 
+h1 {
+    font-size: 42px;
+    margin: 0;
+}
+h2 {
+    font-size: 32px;
+    margin: 0;
+}
+h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.section {
+    min-height: calc(100vh - 75px);
+    .page-width {
+        padding: 75px 0;
+    }
+}
+
 .page-width {
     max-width: 1200px;
     margin: 0 auto;
@@ -19,10 +39,6 @@ body {
     @include breakpoint($mobile) {
         max-width: 90vw;
     }
-}
-
-.section {
-    height: calc(100vh - 75px);
 }
 
 img {
