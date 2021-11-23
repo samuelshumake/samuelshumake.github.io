@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+* {
+    font-family: "Rubik";
+}
+
 .page-width {
     max-width: 1200px;
     margin: 0 auto;
@@ -26,4 +30,14 @@ body {
 
 img {
     max-width: 100%;
+}
+
+// Animations
+@keyframes slide-down {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }

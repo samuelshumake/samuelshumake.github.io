@@ -3,3 +3,33 @@
         @content;
     }
 }
+
+@mixin link($color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+        height: 2px;
+        background-color: $color;
+        transform: scaleX(0);
+        transform-origin: center left;
+        transition: .3s ease;
+    }
+    @media (hover: hover) {
+        &:hover {
+            &::before {
+                transform: scaleX(1);
+            }
+        }
+    }
+    
+}
