@@ -22,10 +22,7 @@ body {
 }
 
 .section {
-    height: 100vh;
-    &.home {
-        height: calc(100vh - 75px);
-    }
+    height: calc(100vh - 75px);
 }
 
 img {
