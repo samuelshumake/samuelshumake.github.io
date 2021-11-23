@@ -2,12 +2,17 @@
     position: absolute;
     width: 100%;
     height: 75px;
+    z-index: 999;
     transition: all .3s ease;
     &.scrolled {
         position: fixed;
         background: $white;
         animation-name: slide-down;
         animation-duration: .3s;
+        .nav-list__link {
+            color: $dark-blue !important;
+            @include link($dark-blue !important);
+        }
     }
     .nav {
         height: 100%;
@@ -21,8 +26,10 @@
             padding: 0;
             .nav-list__item {
                 .nav-list__link {
-                    color: $dark-blue;
-                    @include link($dark-blue);
+                    font-family: "Rubik-Medium";
+                    font-size: 18px;
+                    color: $white;
+                    @include link($white);
                 }
             }
         }

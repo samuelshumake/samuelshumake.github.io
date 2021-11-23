@@ -3,19 +3,24 @@ body {
 }
 
 * {
-    font-family: "Rubik";
+    font-family: "Rubik-Regular";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Rubik-Bold";
 }
 
 h1 {
+    font-size: 72px;
+    margin: 0;
+    text-transform: uppercase;
+}
+h2 {
     font-size: 42px;
     margin: 0;
 }
-h2 {
-    font-size: 32px;
-    margin: 0;
-}
 h3 {
-    font-size: 24px;
+    font-size: 34px;
     margin: 0;
 }
 
