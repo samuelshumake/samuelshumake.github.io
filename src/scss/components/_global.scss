@@ -20,9 +20,13 @@ h3 {
 }
 
 .section {
-    min-height: calc(100vh - 75px);
+    height: calc(100vh - 75px);
+    &.home {
+        height: 100vh;
+    }
     .page-width {
         padding: 75px 0;
+        height: calc(100% - 150px);
     }
 }
 
