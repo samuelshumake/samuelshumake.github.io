@@ -53,6 +53,9 @@ h3 {
     @include breakpoint($mobile) {
         max-width: 90vw;
     }
+    &.page-width--full {
+        max-width: 90vw;
+    }
 }
 
 img {

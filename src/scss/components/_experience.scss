@@ -1,3 +1,116 @@
 .experience {
-    background-color: #F3F3F3;
+    background-color: #1c2128;
+    .experience__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        h2 {
+            color: $white;
+        }
+        .timeline {
+            position: relative;
+            .timeline__main {
+                position: relative;
+                .timeline__item {
+                    display: grid;
+                    position: absolute;
+                    .timeline__date {
+                        grid-row: 1;
+                        font-family: "Rubik-Light";
+                        font-size: 14px;
+                        margin: 0;
+                        color: $light-gray;
+                        opacity: 0.5;
+                    }
+                    .timeline__company {
+                        grid-row: 2;
+                        font-size: 22px;
+                        // Replace individual one w color
+                        color: #CD4A22;
+                    }
+                    .timeline__position {
+                        grid-row: 3;
+                        font-size: 16px;
+                        color: $white;
+                        margin: 0;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -25px;
+                        left: 0;
+                        width: 100%;
+                        height: 4px;
+                        background-color: #CD4A22;
+                    }
+                }
+                #timeline__item--1 {
+                    left: 0;
+                    bottom: 50px;
+                    width: 35%;
+                }
+                #timeline__item--2 {
+                    left: 32%;
+                    bottom: 100px;
+                    width: 23%;
+                }
+                #timeline__item--3 {
+                    left: 52%;
+                    bottom: 150px;
+                    width: 8%;
+                }
+                #timeline__item--4 {
+                    left: 61%;
+                    bottom: 200px;
+                    width: 6%;
+                }
+                #timeline__item--5 {
+                    left: 67%;
+                    bottom: 300px;
+                    width: 10%;
+                }
+                #timeline__item--6 {
+                    left: 79%;
+                    bottom: 400px;
+                    width: 5%;
+                }
+                #timeline__item--7 {
+                    left: 84%;
+                    bottom: 500px;
+                    width: 4%;
+                }
+                #timeline__item--8 {
+                    left: 85%;
+                    bottom: 600px;
+                    width: 3%;
+                }
+                #timeline__item--9 {
+                    left: 90%;
+                    bottom: 700px;
+                    width: 9%;
+                }
+            }
+            .timeline__year-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                .timeline__year {
+                    color: $light-gray;
+                    opacity: 0.5;
+                }
+                .timeline__separator {
+                    flex: 1;
+                    background-color: $light-gray;
+                    height: 2px;
+                    margin: 0 5px;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
 }
