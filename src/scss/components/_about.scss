@@ -10,8 +10,8 @@
             img {
                 width: 500px;
                 height: 500px;
+                border-radius: 100%;
                 object-fit: cover;
-                @include circle-image;
             }
         }
         .about__bio {
