@@ -26,7 +26,6 @@
             padding: 0;
             .nav-list__item {
                 .nav-list__link {
-                    font-family: "Rubik-Medium";
                     font-size: 18px;
                     color: $white;
                     @include link($white);
