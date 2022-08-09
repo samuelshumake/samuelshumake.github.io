@@ -2,25 +2,21 @@
     background-color: #B6CDD8;
     .about__main {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
         .about__image-container {
-            margin: 25px 0 0 0;
-            img {
-                width: 500px;
-                height: 500px;
-                border-radius: 100%;
-                object-fit: cover;
-            }
+            width: 45%;
         }
         .about__bio {
-            max-width: 750px;
-            margin: 25px auto 0;
-            p, li, a {
-                font-size: 18px;
-                line-height: 1.5;
-                text-align: center;
+            width: 50%;
+            .about__logos {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 25px 0 0 0;
+                img {
+                    width: 45%;
+                    height: auto;
+                }
             }
         }
     }

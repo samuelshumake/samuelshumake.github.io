@@ -8,6 +8,8 @@ body {
 
 * {
     font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 h1 {
@@ -24,15 +26,22 @@ h3 {
     margin: 0;
 }
 
+ul {
+    padding-left: 20px;
+    li {
+        &:not(:first-of-type) {
+            margin: 10px 0 0 0;
+        }
+    }
+}
+
 .section {
-    height: calc(100vh - 75px);
     scroll-margin-top: 75px;
     &.home {
         height: 100vh;
     }
     .page-width {
         padding: 75px 0;
-        height: calc(100% - 150px);
     }
 }
 
