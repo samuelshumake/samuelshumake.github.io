@@ -2,5 +2,8 @@
     #elementum-container {
         width: 1200px;
         height: 640px;
+        canvas {
+            border: 3px solid #000000;
+        }
     }
 }
