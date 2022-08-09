@@ -9,3 +9,13 @@ $black: #000000;
 $light-gray: #D3D3D3;
 $gold: #FFB100;
 $dark-blue: #212840;
+
+// Animations
+@keyframes slide-down {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
