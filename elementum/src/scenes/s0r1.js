@@ -128,12 +128,14 @@ export default class s0r1 extends Phaser.Scene {
 		}
 
 		/*---- ---------------MUSIC ------------------ */
-		this.music = this.sound.add("backgroundMusic");
-		var musicConfig = {
-			volume: .1,
-			loop:true
+		if (!this.music) {
+			this.music = this.sound.add("backgroundMusic");
+			var musicConfig = {
+				volume: .1,
+				loop:true
+			}
+			this.music.play(musicConfig);
 		}
-		this.music.play(musicConfig);
 
 		/* ---------- KEYS FOR INTERACTING ---------- */
 		this.switchFire = this.input.keyboard.addKey('one');
