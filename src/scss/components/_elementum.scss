@@ -1,7 +1,11 @@
 .elementum {
+    h2 {
+        text-align: center;
+    }
     #elementum-container {
         width: 1200px;
         height: 640px;
+        margin: 45px 0 0 0;
         canvas {
             border: 3px solid #000000;
         }
