@@ -237,10 +237,6 @@ export default class s1r3 extends Phaser.Scene {
 			}
 		}
 
-		if (this.interact.isDown) {
-			this.lever1.flip(this, [this.platform3, this.platform1]);
-		}
-
 		if (this.physics.overlap(this.rock, this.plate)) {
 			this.plate.trip(this, [this.platform1, this.platform2]);
 		} else if (this.plate.tripped == true) {
