@@ -6,8 +6,27 @@
         width: 1200px;
         height: 640px;
         margin: 45px 0 0 0;
+        @media (max-width: $laptop) {
+            display: none;
+        }
         canvas {
             border: 3px solid #000000;
+        }
+    }
+    .elementum__image {
+        display: none;
+        flex-direction: column;
+        margin: 45px 0 0 0;
+        border: 3px solid #000000;
+        @media (max-width: $laptop) {
+            display: flex;
+        }
+        p {
+            font-size: 14px;
+            margin: 0;
+            color: #FFFFFF;
+            background-color: #404040;
+            padding: 5px 15px;
         }
     }
 }
