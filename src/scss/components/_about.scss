@@ -3,11 +3,20 @@
     .about__main {
         display: flex;
         justify-content: space-between;
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
         .about__image-container {
             width: 45%;
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
         }
         .about__bio {
             width: 50%;
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
             .about__logos {
                 display: flex;
                 justify-content: space-around;
