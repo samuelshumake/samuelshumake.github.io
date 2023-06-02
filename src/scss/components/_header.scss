@@ -50,8 +50,10 @@
             }
         }
         .header__hamburger-container {
+            position: relative;
             display: none;
             padding: 25px 0;
+            z-index: 999;
             @media (max-width: $mobile) {
                 display: block;
             }
@@ -66,6 +68,9 @@
                     display: none;
                 }
                 &.expanded {
+                    img {
+                        filter: invert(1);
+                    }
                     .header__hamburger__open {
                         display: none;
                     }
@@ -79,6 +84,8 @@
     .header__dropdown {
         display: none;
         position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         background-color: #FFF;
         @media (min-width: 769px) {
@@ -98,6 +105,7 @@
                     }
                     .nav-list__link {
                         color: $black;
+                        text-decoration: none;
                     }
                 }
             }
