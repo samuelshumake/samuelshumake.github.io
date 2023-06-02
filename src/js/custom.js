@@ -2,12 +2,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Header Scroll
     window.onscroll = function (e) {
+        // Scroll Bar
         if (window.scrollY > 100) {
             $("#header").addClass("scrolled");
         } else if (window.scrollY == 0) {
             $("#header").removeClass("scrolled");
         }
     } 
+
+    // Window Resize 100vh
+    window.addEventListener('resize', function() {
+        if ($(window).width() < 768) {
+            $("#home").css("height", $(window).innerHeight());
+        }
+    });
 
     // Hamburger menu
     var expanded = false;

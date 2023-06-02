@@ -16,13 +16,19 @@ h1 {
     font-size: 72px;
     margin: 0;
     text-transform: uppercase;
+    @media (max-width: $mobile) {
+        font-size: 62px;
+    }
 }
 h2 {
     font-size: 42px;
     margin: 0;
+    @media (max-width: $mobile) {
+        font-size: 32px;
+    }
 }
 h3 {
-    font-size: 34px;
+    font-size: 28px;
     margin: 0;
 }
 

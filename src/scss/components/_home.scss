@@ -25,24 +25,27 @@
         opacity: 0.5;
         z-index: 0;
     }
-    .home__main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        position: relative;
-        z-index: 1;
-        .home__content {
-            text-align: center;
-            color: $white;
-            .home__career {
-                font-size: 22px;
-                margin: 5px 0 0 0;
-            }
-            .home__degree {
-                font-size: 22px;
-                margin: 5px 0 0 0;
+    .page-width {
+        padding: 0 !important;
+        .home__main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            .home__content {
+                text-align: center;
+                color: $white;
+                .home__career {
+                    font-size: 22px;
+                    margin: 5px 0 0 0;
+                }
+                .home__degree {
+                    font-size: 22px;
+                    margin: 5px 0 0 0;
+                }
             }
         }
     }
