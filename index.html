@@ -9,8 +9,8 @@
         <script src="dist/js/custom.js"></script>
 
         <link rel="stylesheet" href="./elementum/styles.css">
-        <script src="./elementum/src/phaser/phaser.min.js"></script>
-        <script src="./elementum/src/index.js" type="module"></script>
+        <script defer src="./elementum/src/phaser/phaser.min.js"></script>
+        <script defer src="./elementum/src/index.js" type="module"></script>
     </head>
     <body>
         <header id="header" class="header">
@@ -20,14 +20,12 @@
                         <li class="nav-list__item"><a class="nav-list__link" href="#top">Home</a></li>
                         <li class="nav-list__item"><a class="nav-list__link" href="#about">About</a></li>
                         <li class="nav-list__item"><a class="nav-list__link" href="#elementum">Elementum</a></li>
-                        <!-- <li class="nav-list__item"><a class="nav-list__link" href="#experience">Experience</a></li> -->
-                        <!-- <li class="nav-list__item"><a class="nav-list__link" href="#education">Education</a></li> -->
+                        <li class="nav-list__item"><a class="nav-list__link" href="#experience">Experience</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main class="main">
-            <!-- Hero -->
             <section id="home" class="section home">
                 <div class="home__mask"></div>
                 <div class="page-width">
@@ -68,8 +66,43 @@
                     </div>
                 </div>
             </section>
-            <!-- End Hero -->
-            <!-- Elementum -->
+            <section id="experience" class="section experience">
+                <div class="page-width">
+                    <div class="experience__main">
+                        <h2>My Experience</h2>
+                        <div class="experience__item">
+                            <h3 class="experience__company">REQ</h3>
+                            <p class="experience__job-title">Developer | July 2021 - Present</p>
+                            <p class="experience__job-title">Junior Developer | June 2020 - July 2021</p>
+                            <p class="experience__job-title">Intern | January 2020 - June 2020</p>
+                            <div class="black-bar"></div>
+                            <div class="experience__description">
+                                <p>
+                                    Built and spearheaded the agile end-to-end development of more than 10 eCommerce-focused websites, tailoring each project to meet precise client specifications and user stories.
+                                    Develop, design, and maintain the codebase of over 50 commercial websites leveraging content management systems such as WordPress, Drupal, and Shopify to enhance functionality, deploy new content and improve user experience.
+                                    Consult with clients to gather feedback on website design, while troubleshooting issues to ensure functional requirements are implemented and products are delivered according to client strategic and competitive business positions.
+                                    Coordinate across 4 functional teams, including account managers, designers, QA testers, and SEO analysts to achieve team sprint goals and align product deliverables with client expectations, resulting in consistently positive feedback and long-term client relationships.
+                                    Leverage front-end and back-end frameworks and coding languages to develop and maintain websites including NodeJS, JavaScript, SCSS, and PHP to guarantee high performance on both static and dynamic websites.
+                                    Train and guide clients on the utilization and maintenance of delivered products through live website demonstrations and comprehensive documentation on website functionality and design.
+                                    Implement and customize scripts to enable delivery of key SEO metrics such as conversion rates and page speed to help clients leverage data analytical capabilities and execute strategies to increase clients' web presence.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience__item">
+                            <h3 class="experience__company">PMG</h3>
+                            <p class="experience__job-title">Tech Intern | August 2019 - December 2019</p>
+                            <div class="black-bar"></div>
+                            <div class="experience__description">
+                                <p>
+                                    Leveraged Node.js to innovate and implement cutting-edge features within the company's proprietary software, driving enhanced functionality and paving the way for increased productivity and stakeholder satisfaction.
+                                    Utilized object-oriented programming to develop banner ads for top-name brands, seamlessly merging design mocks with technical expertise to deliver engaging marketing campaigns.
+                                    Leveraged SQL proficiency to perform in-depth data analysis, enabling more effective product targeting and enhancing user experience by displaying relevant products.
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </section>
             <section id="elementum" class="section elementum">
                 <div class="page-width">
                     <h2>Elementum</h2>
@@ -80,7 +113,6 @@
                     </div>
                 </div>
             </section>
-            <!-- End Elementum -->
         </main>
         <footer id="footer" class="footer">
             <div class="page-width">
