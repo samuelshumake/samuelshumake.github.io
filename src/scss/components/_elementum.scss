@@ -9,14 +9,14 @@
             display: none;
         }
         canvas {
-            border: 3px solid #000000;
+            border: 3px solid $black;
         }
     }
     .elementum__image {
         display: none;
         flex-direction: column;
         margin: 45px 0 0 0;
-        border: 3px solid #000000;
+        border: 3px solid $black;
         @media (pointer:none), (pointer:coarse) {
             display: flex;
         }

@@ -14,6 +14,11 @@
             color: $dark-blue !important;
             @include link($dark-blue !important);
         }
+        .header__hamburger {
+            img {
+                filter: invert(1);
+            }
+        }
     }
     .header__main {
         display: flex;
@@ -76,13 +81,26 @@
         position: absolute;
         width: 100%;
         background-color: #FFF;
-        @media (min-width: $tablet) {
+        @media (min-width: 769px) {
             display: none !important;
         }
         .nav {
             max-width: 90%;
             margin: 0 auto;
             padding: 25px 0;
+            .nav-list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                .nav-list__item {
+                    &:not(:first-of-type) {
+                        margin: 25px 0 0 0;
+                    }
+                    .nav-list__link {
+                        color: $black;
+                    }
+                }
+            }
         }
     }
 }
