@@ -15,23 +15,74 @@
             @include link($dark-blue !important);
         }
     }
-    .nav {
+    .header__main {
+        display: flex;
         height: 100%;
-        .nav-list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            list-style: none;
+        @media (max-width: $mobile) {
+            justify-content: flex-end;
+        }
+        .nav {
+            width: 100%;
             height: 100%;
-            margin: 0;
-            padding: 0;
-            .nav-list__item {
-                .nav-list__link {
-                    font-size: 18px;
-                    color: $white;
-                    @include link($white);
+            @media (max-width: $mobile) {
+                display: none;
+            }
+            .nav-list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                .nav-list__item {
+                    .nav-list__link {
+                        font-size: 18px;
+                        color: $white;
+                        @include link($white);
+                    }
                 }
             }
+        }
+        .header__hamburger-container {
+            display: none;
+            padding: 25px 0;
+            @media (max-width: $mobile) {
+                display: block;
+            }
+            .header__hamburger {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 0;
+                background: transparent;
+                cursor: pointer;
+                .header__hamburger__close {
+                    display: none;
+                }
+                &.expanded {
+                    .header__hamburger__open {
+                        display: none;
+                    }
+                    .header__hamburger__close {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .header__dropdown {
+        display: none;
+        position: absolute;
+        width: 100%;
+        background-color: #FFF;
+        @media (min-width: $tablet) {
+            display: none !important;
+        }
+        .nav {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 25px 0;
         }
     }
 }

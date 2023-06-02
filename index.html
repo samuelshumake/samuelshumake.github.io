@@ -7,6 +7,7 @@
         <title>Samuel Shumake</title>
         <link rel="stylesheet" href="dist/css/style.css">
         <script src="dist/js/custom.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="./elementum/styles.css">
         <script defer src="./elementum/src/phaser/phaser.min.js"></script>
@@ -15,6 +16,24 @@
     <body>
         <header id="header" class="header">
             <div class="page-width">
+                <div class="header__main">
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-list__item"><a class="nav-list__link" href="#top">Home</a></li>
+                            <li class="nav-list__item"><a class="nav-list__link" href="#about">About</a></li>
+                            <li class="nav-list__item"><a class="nav-list__link" href="#elementum">Elementum</a></li>
+                            <li class="nav-list__item"><a class="nav-list__link" href="#experience">Experience</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__hamburger-container">
+                        <button id="header__hamburger" class="header__hamburger" aria-label="Toggle navigation menu visibility">
+                            <img class="header__hamburger__open" src="./assets/images/hamburger.png" alt="Hamburger icon">
+                            <img class="header__hamburger__close" src="./assets/images/close.png" alt="Close icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="header__dropdown" class="header__dropdown">
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-list__item"><a class="nav-list__link" href="#top">Home</a></li>
