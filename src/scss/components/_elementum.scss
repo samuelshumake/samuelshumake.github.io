@@ -3,10 +3,9 @@
         text-align: center;
     }
     #elementum-container {
-        width: 1200px;
-        height: 640px;
         margin: 45px 0 0 0;
-        @media (max-width: $laptop) {
+        max-height: 80vh;
+        @media (pointer:none), (pointer:coarse) {
             display: none;
         }
         canvas {
@@ -18,7 +17,7 @@
         flex-direction: column;
         margin: 45px 0 0 0;
         border: 3px solid #000000;
-        @media (max-width: $laptop) {
+        @media (pointer:none), (pointer:coarse) {
             display: flex;
         }
         p {
